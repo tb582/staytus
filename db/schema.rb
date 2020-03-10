@@ -175,6 +175,8 @@ ActiveRecord::Schema.define(version: 20180425131827) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "email_address"
+    t.integer "user_id"
   end
 
   create_table "service_statuses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci" do |t|
