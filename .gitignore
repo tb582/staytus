@@ -18,3 +18,4 @@ public/assets
 Procfile.local
 .vscode*
 .DS_Store
+.byebug_history
