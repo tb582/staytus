@@ -73,6 +73,7 @@ GEM
       secure_random_string
     bcrypt (3.1.13)
     builder (3.2.4)
+    byebug (11.1.1)
     chronic (0.10.2)
     chronic_duration (0.10.6)
       numerizer (~> 0.1.1)
@@ -247,6 +248,7 @@ DEPENDENCIES
   annotate (~> 2.6.5)
   authie
   bcrypt
+  byebug (~> 11.1)
   chronic
   chronic_duration
   coffee-rails

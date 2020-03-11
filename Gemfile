@@ -31,3 +31,5 @@ gem 'log_logins'
 group :development, :test do
   gem 'annotate', '~> 2.6.5'
 end
+
+gem "byebug", "~> 11.1", :groups => [:development, :test]

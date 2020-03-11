@@ -13,9 +13,8 @@
 #  identifier        :string(255)
 #  notify            :boolean          default(FALSE)
 #
-
+require "byebug"
 class IssueUpdate < ActiveRecord::Base
-
   validates :state, :inclusion => {:in => Issue::STATES}
   validates :text, :presence => true
 
@@ -52,12 +51,14 @@ class IssueUpdate < ActiveRecord::Base
   end
 
   def send_notifications
+    byebug
     for subscriber in Subscriber.verified
       Staytus::Email.deliver(subscriber, :new_issue_update, :issue => self.issue, :update => self)
     end
   end
 
   def send_notifications_on_create
+    byebug
     if self.notify?
       delay.send_notifications
     end
