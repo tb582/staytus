@@ -21,7 +21,7 @@ module Staytus
         end
 
         # Convert the plain text message into HTML
-        markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+        markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, no_intra_emphasis: true)
         content_html = markdown.render(plain_text)
 
         # Get the HTML template and generate a final HTML message
