@@ -16,6 +16,10 @@ config/database.yml
 config/secret_token.yml
 public/assets
 Procfile.local
+<<<<<<< HEAD
 .vscode*
 .DS_Store
 .byebug_history
+=======
+*.idea
+>>>>>>> 07676a1825a00d6594115d90893b473f034cc86f
